@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Hilton Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-hilton shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="https://1000marcas.net/wp-content/uploads/2020/02/Hilton-S%C3%ADmbolo.jpg" alt="Hilton Logo" height="30" class="d-inline-block align-top me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Gestion Hoteles.html">Dashboard</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./vista_login.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-hilton ms-lg-2" href="./register.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ 
+    <section class="landing-hero d-flex align-items-center">
+        <div class="container text-center animate__animated animate__fadeIn">
+            <h1 class="display-3 fw-bold mb-4">Sistema de Gestión Hilton</h1>
+            <p class="lead mb-5">Control completo de hoteles y habitaciones</p>
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+                <a href="./vista_login.html" class="btn btn-hilton btn-lg">
+                    <i class="fas fa-sign-in-alt me-2"></i> Acceder
+                </a>
+                <a href="#" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-bed me-2"></i> Ver Habitaciones
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-grey">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Funcionalidades Principales</h2>
+                <p class="lead">Todo lo que necesitas para la gestión hotelera</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-black">
+                    <div class="card card-hotel h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <h4 class="mb-3">Gestión de Hoteles</h4>
+                            <p>Administra múltiples propiedades, sus características y categorías desde un panel centralizado.</p>
+                            <a href="./Gestion Hoteles.html" class="btn btn-sm btn-hilton">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-5 text-black">
+                    <div class="card card-hotel h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <h4 class="mb-3">Gestión de Habitaciones</h4>
+                            <p>Controla el inventario, estados y mantenimiento de todas las habitaciones con nuestro sistema especializado.</p>
+                            <a href="#" class="btn btn-sm btn-hilton">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-4 bg-hilton text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="data:image/png;base64,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" alt="Hilton Logo" height="30" class="mb-3">
+                    <p>Sistema de Gestión Hotelera Hilton</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <small>&copy; 2023 Hilton Hotel Management</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            gsap.from(".landing-hero h1", {duration: 1, y: -50, opacity: 0});
+            gsap.from(".landing-hero p", {duration: 1, y: 50, opacity: 0, delay: 0.3});
+            gsap.from(".landing-hero .btn", {duration: 1, y: 50, opacity: 0, delay: 0.6});
+        });
+    </script>
+</body>
+</html>
